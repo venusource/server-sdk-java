@@ -26,22 +26,22 @@ public class Example {
 	 */
 	public static void main(String[] args) throws Exception {
 
-		String key = "app-key";//替换成您的appkey
-		String secret = "appsecrect";//替换成匹配上面key的secret
+		String key = "6tnym1brnz0r7";//替换成您的appkey
+		String secret = "0Sa35kE87rNID0";//替换成匹配上面key的secret
 
 		SdkHttpResult result = null;
 
 		//获取token
-		result = ApiHttpClient.getToken(key, secret, "402880ef4a", "asdfa",
-				"http://aa.com/a.png", FormatType.json);
+		result = ApiHttpClient.getToken(key, secret, "18600017668", "cj.zhao",
+				null, FormatType.json);
 		System.out.println("gettoken=" + result);
 		
 		//发消息(push内容为消息内容)
 		List<String> toIds = new ArrayList<String>();
-		toIds.add("id1");
-		toIds.add("id2");
-		toIds.add("id3");
-		result = ApiHttpClient.publishMessage(key, secret, "fromUserId", toIds,
+		toIds.add("15810486899");
+		toIds.add("15201235384");
+		toIds.add("13869329688");
+		result = ApiHttpClient.publishMessage(key, secret, "18600017668", toIds,
 				new TxtMessage("txtMessagehaha"), FormatType.json);
 		System.out.println("publishMessage=" + result);
 		

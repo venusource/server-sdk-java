@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'commons-codec:commons-codec:1.4'
+    testCompile 'junit:junit:4.12'
+}
+
+jar {
+    baseName = 'rongcloud-server-sdk-java'
+    version = '0.0.1'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.11'
+}
