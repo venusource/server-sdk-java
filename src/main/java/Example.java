@@ -218,7 +218,7 @@ public class Example {
 	 */
 	private static PushMessage createPushMessage()
 			throws UnsupportedEncodingException {
-		List<String> osList = new ArrayList<>();
+		List<String> osList = new ArrayList<String>();
 		osList.add("ios");
 		osList.add("android");
 
@@ -266,7 +266,7 @@ public class Example {
 	 */
 	private static PushMessage createPushMessage2()
 			throws UnsupportedEncodingException {
-		List<String> osList = new ArrayList<>();
+		List<String> osList = new ArrayList<String>();
 		osList.add("ios");
 		osList.add("android");
 
@@ -302,7 +302,7 @@ public class Example {
 	private static PlatformNotification createPush() {
 		PlatformNotification data = new PlatformNotification();
 		data.setAlert("override alert");
-		Map<String, String> map = new HashMap<>();
+		Map<String, String> map = new HashMap<String, String>();
 		map.put("id", "1");
 		map.put("name", "2");
 		data.setExtras(map);

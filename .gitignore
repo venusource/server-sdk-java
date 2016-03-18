@@ -2,5 +2,6 @@
 .project
 .settings
 .gradle
+*.iml
 bin
 build
